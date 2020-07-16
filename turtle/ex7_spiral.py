@@ -1,12 +1,17 @@
-from math import pi, sin, cos
-import turtle
+from math import *
+from turtle import *
 
-turtle.shape('turtle')
+def main():
+    spiral()
 
-for i in range(200):
-    t = i / 10 * pi
-    dx = t * cos(t)
-    dy = t * sin(t)
-    turtle.goto(dx, dy)
+def spiral():
+    shape('turtle')
+    for i in range(200):
+        t = i / 10 * pi
+        dx = t * cos(t)
+        dy = t * sin(t)
+        goto(dx, dy)
+
+main()
 
 

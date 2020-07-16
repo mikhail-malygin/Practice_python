@@ -1,12 +1,18 @@
-import turtle
+from turtle import *
 
-turtle.shape('turtle')
-turtle.forward(10)
-turtle.left(90)
-turtle.forward(10)
-turtle.left(90)
-turtle.forward(10)
-turtle.right(90)
-turtle.forward(10)
-turtle.right(90)
-turtle.forward(10)
+def main():
+    letter_S(100)
+
+def letter_S(length):
+    shape('turtle')
+    forward(length)
+    left(90)
+    forward(length)
+    left(90)
+    forward(length)
+    right(90)
+    forward(length)
+    right(90)
+    forward(length)
+
+main()

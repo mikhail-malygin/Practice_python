@@ -1,12 +1,17 @@
-import turtle
+from turtle import *
 
+def main():
+    spider(12, 100)
 
-turtle.shape('turtle')
+def spider(number_paws, length_paws):
+    shape('turtle')
+    angleFi = 360 / number_paws
+    for i in range(number_paws) :
+        right(angleFi)
+        forward(length_paws)
+        stamp()
+        penup()
+        backward(length_paws)
+        pendown()
 
-for i in range(12) :
-    turtle.right(30)
-    turtle.forward(50)
-    turtle.stamp()
-    turtle.penup()
-    turtle.backward(50)
-    turtle.pendown()
+main()

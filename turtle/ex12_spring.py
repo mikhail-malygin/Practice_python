@@ -1,18 +1,13 @@
-import turtle
+from turtle import *
 
-turtle.shape('turtle')
+def main(number_loops, big_radius, small_radius):
+    left(90)
+    for i in range(number_loops):
+        semicircle(big_radius)
+        semicircle(small_radius)
 
 def semicircle(radius):
-    turtle.circle(-radius, 180)
+    shape('turtle')
+    circle(-radius, 180)
 
-def semicircle(radius):
-    turtle.circle(-radius, 180)
-
-number_of_loops = 10
-big_radius = 25
-small_radius = 5
-
-turtle.left(90)
-for i in range(number_of_loops):
-    semicircle(big_radius)
-    semicircle(small_radius)
+main(10, 25, 5)

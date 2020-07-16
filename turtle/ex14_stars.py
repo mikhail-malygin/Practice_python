@@ -1,9 +1,15 @@
 from turtle import *
-from math import *
 
-shape('turtle')
-delay(10)
 
+def main(length):
+    shape('turtle')
+    delay(10)
+
+    star(length, 5)
+    penup()
+    forward(2 * length)
+    pendown()
+    star(length, 11)
 
 
 def star(length, number):
@@ -11,8 +17,4 @@ def star(length, number):
         forward(length)
         right(180 - 360 / (2 * number))
 
-star(100, 5)
-penup()
-forward(200)
-pendown()
-star(100, 11)
+main(100)
