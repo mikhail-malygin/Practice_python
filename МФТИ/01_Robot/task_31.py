@@ -3,7 +3,7 @@
 from pyrob.api import *
 
 
-@task(delay = 0.01)
+@task(delay = 0.1)
 def task_8_30():
 
     current_number_of_apperture = 0
